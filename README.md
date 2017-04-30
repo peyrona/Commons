@@ -1,4 +1,4 @@
-# Peyroan Commons
+# Peyrona Commons
 This is my equivalent to the Apache-Commons.
 
 In my spare time I write Java code for embedded devices: this code must be as small as possible (low RAM footprint).
