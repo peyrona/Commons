@@ -420,9 +420,9 @@ public class UtilString
 
         char[] aChar = str.toCharArray();
 
-        for( int n = 1; n < aChar.length; n++  )
+        for( int n = 0; n < aChar.length; n++  )
         {
-            if( ! Character.isDigit( aChar[n] ) )
+            if( (aChar[n] < '+') || (aChar[n] > '9') || (aChar[n] == '/') )
             {
                 return false;
             }
@@ -437,7 +437,7 @@ public class UtilString
                &&
                (str.indexOf( '.' ) == -1)
                &&
-               (str.indexOf( ',' ) == -1);   // En el mundo sólo hay 2 posibilidades: ',' y '.'
+               (str.indexOf( ',' ) == -1);  // In the whole world there are only these 2 options: '.' and ','
     }
 
     public static boolean isNotInteger( final String str )
